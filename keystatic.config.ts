@@ -4,7 +4,7 @@ export default config({
   storage: {
       kind: 'github',
       repo: {
-        owner: 'phytely',
+        owner: 'phytely-hq',
         name: 'website'
       },
     },
