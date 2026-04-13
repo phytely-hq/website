@@ -5,6 +5,14 @@ import EditorialPost from '@/components/blog_section';
 
 const reader = createReader(process.cwd(), keystaticConfig);
 
+export async function generateStaticParams() {
+  const slugs = await reader.collections.posts.list();
+  
+  return slugs.map((slug) => ({
+    slug: slug,
+  }));
+}
+
 export default async function BlogPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params;
   const post = await reader.collections.posts.read(slug);
