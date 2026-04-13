@@ -12,12 +12,6 @@ under +[Creative Commons Attribution 4.0 International License](https://creative
 
 ## About Phytely
 
-``
-<a href="https://www.phytely.com/">
-  <img align="left" src="https://avatars2.githubusercontent.com/"/>
-</a>
-``
-
 This project is the work of engineers at [Phytely][footer_website].
 We are an agritech leader dedicated to derisking farming for growers through real-time data and precision tools. 
 Our core mission is built upon the pillars of [Environmental Sustainable Agriculture][footer_sustainability], 
