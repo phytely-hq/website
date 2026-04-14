@@ -50,20 +50,6 @@ export default function PhytelyHero() {
 
         <div className="absolute inset-0 bg-foreground/5 pointer-events-none" />
 
-        <div className="absolute inset-0 pointer-events-none mb-14 ">
-          <div className="max-w-screen-2xl mx-auto h-full px-4 md:px-8 relative">
-            <div className="absolute bottom-6 md:bottom-10 max-w-md">
-              <p className="text-[10px] font-mono uppercase tracking-[0.3em] text-white/60 mb-3 drop-shadow-sm">
-                Active Telemetry
-              </p>
-              <p className="text-xs md:text-sm font-medium leading-relaxed text-white drop-shadow-md mr-4">
-                <span className="text-primary mr-2 font-black">//</span>
-                Clarence Hub Real-time signal processing of moisture, nutrient 
-                density, and biological risks across monitored sectors.
-              </p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
