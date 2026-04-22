@@ -1,0 +1,68 @@
+---
+title: Automated Tree Counting
+author: John Doe
+publishedDate: 2026-03-31
+summary: >-
+  Technical dispatches on using computer vision and GIS for large-scale forest
+  inventory.
+coverImage: /images/blog/covers/automated-tree-counting/coverImage.jpg
+---
+### FROM ESTIMATION TO ABSOLUTE DATA
+
+Manual inventory is a fundamental bottleneck in large-scale forestry and orchard management. Relying on human sight to count trees is not only slow and expensive but introduces a significant margin of error that compounds over time. When I began architecting the Phytely ecosystem, I prioritized automating this process to move from broad estimation to absolute, actionable data. By integrating Computer Vision (CV) with Geographic Information Systems (GIS), I am building a system where a forest is no longer seen as a single mass, but as a collection of addressable data points.
+
+```bash
+curl -X POST "https://api.phytely.io/v1/stream/analyze" \
+     -H "Authorization: Bearer ${PHYTELY_ARCHITECT_KEY}" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "stream_source": "rtsp://drone-alpha.local:8554/live",
+       "protocol": "RTSP",
+       "operation": "CANOPY_COUNT_REALTIME",
+       "edge_node": "LESOTHO_HIGHLANDS_04",
+       "callback_url": "https://dashboard.phytely.io/webhooks/inventory-update",
+       "params": {
+         "confidence_threshold": 0.85,
+         "species_id": "PINUS_PATULA",
+         "gps_overlay": true
+       }
+     }'
+```
+
+The core of this technical approach involves a processing pipeline that starts with high-resolution aerial or satellite imagery. I use Convolutional Neural Networks (CNNs) to perform feature extraction, which allows the software to identify individual tree canopies based on their specific spectral signatures and geometric shapes. This process is critical for accuracy, as the system must be trained to differentiate between the target crop and invasive species or general ground cover. By automating the identification layer, I can process thousands of hectares in a fraction of the time it would take a field team to survey a single plot.
+
+### GEOSPATIAL PRECISION AND EDGE DEPLOYMENT
+
+Once a tree is identified, it is assigned a precise coordinate within a GIS layer. This geospatial tagging is what transforms a simple count into a digital inventory. Having a unique "address" for every tree allows for long-term health monitoring and precise resource allocation. If a specific section of an orchard shows signs of stress, the system can point to the exact trees affected rather than recommending a blanket application of fertilizer or pesticides. This level of granularity is essential for mitigating farming costs and ensuring that every input is used with maximum efficiency.
+
+Ultimately, automated tree counting is the foundation for predictive risk analytics. When you know exactly what you have and where it is located, you can begin to model yield targets and resource requirements with high precision. For a solo founder or a timber firm, this data provides a clear system of record that removes guesswork from the equation. It represents a shift from traditional observation to a rigorous, engineering-led approach to land management, ensuring that quality and scale can coexist.
+
+```bash
+curl -X PUT "https://api.phytely.io/v1/inventory/batch-commit" \
+     -H "X-Phytely-Node: LESOTHO_HIGHLANDS_04" \
+     -H "Content-Type: application/json" \
+     -d '{
+       "session_id": "FLIGHT_2026_04_09_A",
+       "timestamp": "2026-04-09T20:33:14Z",
+       "detections": [
+         {
+           "uid": "TREE_P_001042",
+           "coords": [-29.3151, 27.4869],
+           "canopy_diameter": "4.2m",
+           "health_index": 0.92,
+           "status": "VERIFIED"
+         },
+         {
+           "uid": "TREE_P_001043",
+           "coords": [-29.3152, 27.4871],
+           "canopy_diameter": "3.8m",
+           "health_index": 0.88,
+           "status": "VERIFIED"
+         }
+       ],
+       "total_count": 248,
+       "processing_time_ms": 420
+     }'
+```
+
+To make this technology viable for remote areas, such as the highlands of Lesotho, I am focusing on edge processing. Bandwidth is often a luxury in the field, so the goal is to handle the heavy computational load of identification locally on the hardware.
