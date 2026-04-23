@@ -62,7 +62,7 @@ export default function PartnersMain() {
             </div>
             
             <div className="pt-4">
-              <Link href="mailto:info@phytely.com?subject=Enquiry%20on%20Insurance%20Provider%20Partnership">
+              <Link href="mailto:support@phytely.com?subject=Enquiry%20on%20Insurance%20Provider%20Partnership">
                 <Button variant="default" size="sm" className="uppercase font-bold h-12 px-8 tracking-widest rounded-none w-fit">
                   Enquire More
                 </Button>
@@ -112,7 +112,7 @@ export default function PartnersMain() {
             </div>
             
             <div className="pt-4">
-              <Link href="mailto:info@phytely.com?subject=Enquiry%20on%20IoT%20and%20Infrastructure%20Partnership">
+              <Link href="mailto:support@phytely.com?subject=Enquiry%20on%20IoT%20and%20Infrastructure%20Partnership">
                 <Button variant="default" size="sm" className="uppercase font-bold h-12 px-8 tracking-widest rounded-none w-fit">
                   Enquire More
                 </Button>
