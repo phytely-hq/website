@@ -73,9 +73,11 @@ export function Navbar() {
             <Button variant="link" size="sm" className="tracking-widest hidden sm:block" >
                 View Docs
             </Button>
-            <Button variant="default" size="sm" className="tracking-widest" >
+            <Link href="https://app.phytely.com/">
+             <Button variant="default" size="sm" className="tracking-widest" >
                 Try App
-            </Button>
+             </Button>
+            </Link>
           </div>
         </div>
       </header>
