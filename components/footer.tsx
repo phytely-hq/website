@@ -49,8 +49,8 @@ export default function PhytelyFooter() {
           <div className="flex flex-col gap-4">
             <div className="flex items-center gap-4">
               <MailboxIcon size={18} weight="fill" />
-              <a href="mailto:info@phytely.com" className="hover:text-white transition-colors">
-                info@phytely.com
+              <a href="mailto:support@phytely.com" className="hover:text-white transition-colors">
+                support@phytely.com
               </a>
             </div>
             <p>© {new Date().getFullYear()} Phytely (Pty) Ltd.</p>
