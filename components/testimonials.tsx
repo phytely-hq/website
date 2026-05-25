@@ -44,7 +44,7 @@ const Testimonials = () => {
           <div className="mx-auto max-w-screen-2xl relative w-full bg-black overflow-hidden group">
             <video
               ref={videoRef}
-              src="/content/testimonial.mp4#t=2"
+              src="/content/testimonial.mp4#t=3.5"
               className={`w-full aspect-video object-contain cursor-pointer transition-all duration-700 ${
                 isPlaying ? 'grayscale-0' : 'grayscale'
               }`}
