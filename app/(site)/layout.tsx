@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     description: "Intelligent data layers for modern plant management. Built for precision, efficiency, and scale.",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image-v2.png",
         width: 1200,
         height: 630,
         alt: "Phytely - Quants for Plants",
@@ -62,7 +62,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Phytely | Quants for Plants",
     description: "Building the quantitative infrastructure for a smarter, greener, and more risk-averse farming world.",
-    images: ["/og-image.png"],
+    images: ["/og-image-v2.png"],
   },
   icons: {
     icon: "/favicon.ico",
