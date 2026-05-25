@@ -45,7 +45,9 @@ const Testimonials = () => {
             <video
               ref={videoRef}
               src="/content/testimonial.mp4"
-              className={`w-full aspect-[9/16] sm:aspect-video object-cover cursor-pointer transition-all duration-700 ${isPlaying ? 'grayscale-0' : 'grayscale'}`}
+              className={`w-full aspect-video object-contain cursor-pointer transition-all duration-700 ${
+                isPlaying ? 'grayscale-0' : 'grayscale'
+              }`}
               playsInline
               onClick={handleVideoClick}
             />
