@@ -11,7 +11,7 @@ export default function ContactOffices() {
   const MASERU_COORDINATES = [-29.3151, 27.4869] as LatLngExpression; 
 
   return (
-    <section className="w-full flex flex-col pt-16 md:pt-24 bg-background">
+    <section className="w-full flex flex-col pt-4 md:pt-24 bg-background">
       
       <div className="max-w-screen-2xl mx-auto px-4 md:px-8 w-full mb-10 md:mb-14">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-end">
