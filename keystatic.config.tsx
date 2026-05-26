@@ -16,7 +16,16 @@ export default config({
           ? 'https://www.phytely.com/phytely-logo.png'
           : 'https://www.phytely.com/phytely-logo.png';
         
-        return <img src={path} style={{ height: '12px', width: '12px', borderRadius: '3px', objectFit: 'cover' }} alt="icon"  />
+        return <img src={path} style={{ 
+            height: '12px', width: '12px', 
+            borderRadius: '3px',
+            backgroundColor: '#000000',
+            padding: '4px',
+            objectFit: 'contain',
+            boxSizing: 'content-box',
+            display: 'inline-block',
+            vericalAlign: 'middle'
+            }} alt="Phytely Keystatic icon"  />
       },
     },
   },
