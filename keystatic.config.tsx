@@ -16,7 +16,7 @@ export default config({
         
         return <img src={path} style={{ 
             height: '15px', width: '15px', 
-            borderRadius: 4px',
+            borderRadius: '4px',
             backgroundColor: colorScheme === 'dark' ? 'transparent' : '#000000',
             padding: '1px',
             objectFit: 'contain',
