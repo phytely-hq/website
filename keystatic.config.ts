@@ -8,6 +8,18 @@ export default config({
         name: 'website'
       },
     },
+  ui: {
+    brand: { 
+      name: 'Phytely | CMS', 
+      mark: ({ colorScheme }) => {
+        let path = colorScheme === 'dark'
+          ? '//www.phytely.com/path/to/dark-logo.png'
+          : '//your-brand.com/path/to/light-logo.png';
+        
+        return <img src={path} height={24} />
+      },
+    },
+  },
   collections: {
     posts: collection({
       label: 'Blog Posts',
