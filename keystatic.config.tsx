@@ -16,7 +16,7 @@ export default config({
           ? 'https://www.phytely.com/phytely-logo.png'
           : 'https://www.phytely.com/phytely-logo.png';
         
-        return <img src={path} height={24} />
+        return <img src={path} style={{ height: '12px', width: '12px', borderRadius: '3px', objectFit: 'cover' }} alt="icon"  />
       },
     },
   },
