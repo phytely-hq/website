@@ -10,15 +10,14 @@ export default config({
     },
   ui: {
     brand: { 
-      name: 'Phytely', 
+      name: 'Phytely CMS', 
       mark: ({ colorScheme }) => {
         let path = 'https://www.phytely.com/logo.png';
         
         return <img src={path} style={{ 
-            height: '15px', width: '15px', 
+            height: '14px', width: '14px', 
             borderRadius: '4px',
             backgroundColor: colorScheme === 'dark' ? 'transparent' : '#000000',
-            padding: '1px',
             objectFit: 'contain',
             boxSizing: 'content-box',
             display: 'inline-block',
