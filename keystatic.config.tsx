@@ -15,10 +15,10 @@ export default config({
         let path = 'https://www.phytely.com/logo.png';
         
         return <img src={path} style={{ 
-            height: '16px', width: '16px', 
+            height: '18px', width: '18px', 
             borderRadius: '4px',
             backgroundColor: colorScheme === 'dark' ? 'transparent' : '#000000',
-            padding: '3px',
+            padding: '4px',
             objectFit: 'contain',
             boxSizing: 'content-box',
             display: 'inline-block',
