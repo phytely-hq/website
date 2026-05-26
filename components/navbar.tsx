@@ -35,7 +35,7 @@ export function Navbar() {
     <>
       <header className="relative top-0 left-0 right-0 z-100">
         <div className="max-w-screen-2xl mx-auto px-6 md:px-10 h-16 flex items-center justify-between">
-          <div className="flex items-center gap-6 md:gap-8">
+          <div className="flex items-center gap-4 md:gap-6">
             <button
               onClick={() => setIsOpen((v) => !v)}
               aria-label={isOpen ? "Close menu" : "Open menu"}
