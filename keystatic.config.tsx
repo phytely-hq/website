@@ -17,14 +17,14 @@ export default config({
           : 'https://www.phytely.com/phytely-logo.png';
         
         return <img src={path} style={{ 
-            height: '12px', width: '12px', 
-            borderRadius: '3px',
+            height: '14px', width: '14px', 
+            borderRadius: '2px',
             backgroundColor: '#000000',
-            padding: '4px',
+            padding: '2px',
             objectFit: 'contain',
             boxSizing: 'content-box',
             display: 'inline-block',
-            vericalAlign: 'middle'
+            verticalAlign: 'middle'
             }} alt="Phytely Keystatic icon"  />
       },
     },
