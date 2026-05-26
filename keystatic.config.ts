@@ -13,8 +13,8 @@ export default config({
       name: 'Phytely | CMS', 
       mark: ({ colorScheme }) => {
         let path = colorScheme === 'dark'
-          ? '//www.phytely.com/path/to/dark-logo.png'
-          : '//your-brand.com/path/to/light-logo.png';
+          ? 'https://www.phytely.com/phytely-logo.png'
+          : 'https://www.phytely.com/phytely-logo.png';
         
         return <img src={path} height={24} />
       },
