@@ -6,27 +6,27 @@ import Image from "next/image"
 const services = [
   {
     id: "01",
-    title: "Universal Data Connectivity",
-    description: "Connect every sensor and machine into one unified stream.",
+    title: "Orchard Risk Analytics",
+    description: "We map out everything that could threaten your fruit trees so you always stay ahead.",
     image: "/content/images/iot_hub_1.png",
   },
   {
     id: "02",
-    title: "Mobile Friendly Interface",
-    description: "Total operational control from any device, anywhere in the field.",
-    image: "/content/images/iot_hub_4.png",
+    title: "Pollination Contracts",
+    description: "We deploy managed hives to your fields so your crops the hit maximum allowable yield.",
+    image: "https://images.pexels.com/photos/31387312/pexels-photo-31387312.png",
   },
   {
     id: "03",
-    title: "Easy IoT Integrations",
-    description: "Plug and play compatibility with your existing hardware stack.",
-    image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=800&auto=format&fit=crop",
+    title: "Land Restoration",
+    description: "We rebuild your degraded soil using native plants and root boosting fungi.",
+    image: "https://images.pexels.com/photos/35910440/pexels-photo-35910440.jpeg",
   },
   {
     id: "04",
-    title: "Superior Data Visualization",
-    description: "Simple, real-time charts that tell you exactly what to do next.",
-    image: "/content/images/api_2.png",
+    title: "Conservation Outreach",
+    description: "We track as well as tag threatened tree-based ecosystems, and actively preserve them.",
+    image: "https://images.pexels.com/photos/19944982/pexels-photo-19944982.jpeg",
   },
 ]
 
@@ -39,8 +39,8 @@ export default function ServicesSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 mb-16 items-start">
         <div className="lg:col-span-2">
           <h2 className="text-5xl sm:text-7xl md:text-8xl font-black uppercase leading-[0.88] tracking-tighter text-balance">
-            <span className="block text-foreground">Full Signals</span>
-            <span className="block text-muted-foreground">Zero Noise.</span>
+            <span className="block text-foreground">Pure Science.</span>
+            <span className="block text-muted-foreground">Zero Guesswork.</span>
           </h2>
         </div>
       </div>
