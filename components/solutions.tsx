@@ -13,8 +13,8 @@ const services = [
   {
     id: "02",
     title: "Pollination Contracts",
-    description: "We deploy managed hives to your fields so your crops the hit maximum allowable yield.",
-    image: "https://images.pexels.com/photos/31387312/pexels-photo-31387312.png",
+    description: "We deploy managed hives to your fields so your crops hit the maximum allowable yield.",
+    image: "https://images.pexels.com/photos/7459846/pexels-photo-7459846.jpeg",
   },
   {
     id: "03",
@@ -25,7 +25,7 @@ const services = [
   {
     id: "04",
     title: "Conservation Outreach",
-    description: "We track as well as tag threatened tree-based ecosystems, and actively preserve them.",
+    description: "We track as well as tag threatened tree based ecosystems, and actively help preserve them.",
     image: "https://images.pexels.com/photos/19944982/pexels-photo-19944982.jpeg",
   },
 ]
