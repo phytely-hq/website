@@ -260,9 +260,9 @@ function MapTileLayer({
 
     const context = useContext(MapLayersContext)
     const DEFAULT_URL =
-        `https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key={process.env.NEXT_PUBLIC_CARTO_API_KEY}`
+        `https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=${process.env.NEXT_PUBLIC_CARTO_API_KEY}`
     const DEFAULT_DARK_URL =
-        `https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key={process.env.NEXT_PUBLIC_CARTO_API_KEY}`
+        `https://basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=${process.env.NEXT_PUBLIC_CARTO_API_KEY}`
 
     const { resolvedTheme } = useTheme()
     const resolvedUrl =
