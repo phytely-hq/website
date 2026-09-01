@@ -23,7 +23,7 @@ export default function EditorialPost({ title, summary, author, date, coverImage
         <div className="my-10 w-full break-inside-avoid">
           <img 
             {...props} 
-            className="w-full h-auto object-cover bg-muted grayscale hover:grayscale-0 transition-all duration-700" 
+            className="w-full h-auto object-cover bg-muted/50" 
           />
           {props.alt && (
             <p className="text-xs md:text-sm font-medium leading-relaxed text-muted-foreground text-start mt-4">
