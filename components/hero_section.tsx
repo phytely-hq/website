@@ -11,16 +11,14 @@ export default function PhytelyHero() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-end mb-6 md:mb-8">
           <div className="lg:col-span-7 flex flex-col gap-4">
             <h1 className="text-5xl sm:text-7xl md:text-8xl font-black uppercase leading-[0.88] tracking-tighter text-balance">
-              <span className="block text-foreground">Plant Smarter.</span>
-              <span className="block text-muted-foreground">Grow Greener.</span>
+              <span className="block text-foreground">Quants</span>
+              <span className="block text-muted-foreground">For Plants.</span>
             </h1>
           </div>
 
           <div className="lg:col-span-5 flex flex-col items-start lg:items-end gap-6">
             <p className="text-sm font-medium leading-relaxed max-w-md text-muted-foreground lg:text-right">
-              Farming is a high-stakes gamble against biological variables. We
-              provide the high-fidelity signal required to underwrite the margin 
-              and eliminate the data noise that steals your profit.
+              At Phytely (Pty) Ltd, we provide agricultural risk management built to give farmers data backed, practical crop protection that doesn't come at the expense of the planet.
             </p>
             <div className="flex flex-col sm:flex-row gap-3 w-full lg:justify-end">
               <Link href="/#about">
