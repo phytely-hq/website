@@ -6,20 +6,20 @@ import Image from "next/image"
 const services = [
   {
     id: "01",
-    title: "Orchard Risk Analytics",
-    description: "We map out everything that could threaten your fruit trees so you always stay ahead.",
+    title: "Analytics As A Service",
+    description: " Get Quantitative analysis and spatial threat mapping to safeguard your fruit trees and optimize resource efficiency.",
     image: "/content/images/iot_hub_1.png",
   },
   {
     id: "02",
-    title: "Pollination Contracts",
-    description: "We deploy managed hives to your fields so your crops hit the maximum allowable yield.",
+    title: "Pollination As A Service",
+    description: "We deploy managed hives directly to your orchard to maximize fruit set, helping you hit your peak yield potential.",
     image: "https://images.pexels.com/photos/7459846/pexels-photo-7459846.jpeg",
   },
   {
     id: "03",
     title: "Land Restoration",
-    description: "We rebuild your degraded soil using native plants and root boosting fungi.",
+    description: "We help orchard managers and forestry projects identify failed stock, source high-quality saplings, and execute full tree replacement seamlessly.",
     image: "https://images.pexels.com/photos/35910440/pexels-photo-35910440.jpeg",
   },
   {
