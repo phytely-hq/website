@@ -25,7 +25,7 @@ const services = [
   {
     id: "04",
     title: "Conservation Outreach",
-    description: "We identify and geotag threatened tree species, working directly with local communities and land managers to actively monitor, rehabilitate, and preserve them.",
+    description: "We identify and geotag threatened tree species, working directly with local communities and land managers to actively monitor and preserve them.",
     image: "https://images.pexels.com/photos/19944982/pexels-photo-19944982.jpeg",
   },
 ]
